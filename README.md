@@ -8,7 +8,8 @@ In the contemporary healthcare industry, efficient management of patients, docto
 - To generate appointment receipts for patients. 
 
 **SYSTEM REQUIREMENTS**
- Functional Requirements-
+
+Functional Requirements-
 - Patient Management: 
   - Add, view, and update patient records. 
 - Doctor Management: 
@@ -35,6 +36,7 @@ In the contemporary healthcare industry, efficient management of patients, docto
 - Software: Java Development Kit (JDK), integrated development environment (IDE), text editor.
 
 **MODULES AND STAKEHOLDERS**
+
 Modules:
 1. Patient Management Module:
    - Responsible for adding, listing, and managing patient records. 
@@ -85,61 +87,52 @@ These modules and stakeholders collectively contribute to the development, maint
 
 **BREAKDOWN OF CODE**
 1. Main Class - MedicalManagementSystem.java
- 
 - This is the main class of the program where user interactions are handled. 
 - It initializes instances of `PatientManager` and `DoctorManager` to manage patients and doctors, respectively. 
 - Inside the `while` loop, the user is presented with options to manage patients, doctors, book an appointment, or exit the system. 
  
-2. Abstract Class - Person.java 
- 
+2. Abstract Class - Person.java  
 - `Person` is an abstract class representing a generic person with attributes like name and age. 
 - Both `Doctor` and `Patient` classes inherit from this abstract class. 
 - The use of an abstract class allows us to define common attributes and methods for both doctors and patients. 
  
-3. Doctor Class - Doctor.java 
- 
+3. Doctor Class - Doctor.java  
 - The `Doctor` class represents a doctor and inherits from the `Person` class. 
 - It has an additional attribute, `specialization`, which represents the doctor's medical specialization. 
 - A constructor is used to initialize a doctor's attributes (name, age, specialization). 
 - The `toString` method is overridden to provide a meaningful string representation of the doctor. 
  
-4. Patient Class - Patient.java 
- 
+4. Patient Class - Patient.java  
 - The `Patient` class represents a patient and also inherits from the `Person` class. 
 - It does not have any additional attributes compared to the `Person` class. 
 - A constructor is used to initialize a patient's attributes (name, age). 
 - The `toString` method is overridden to provide a meaningful string representation of the patient. 
  
-5. DoctorManager Class - DoctorManager.java 
- 
+5. DoctorManager Class - DoctorManager.java  
 - The `DoctorManager` class is responsible for managing doctors. 
 - It maintains a list of doctors using the `List<Doctor>` data structure. 
 - It provides methods to add doctors, list doctors, and select a doctor by specialization. 
 - The `selectDoctorBySpecialization` method allows the user to choose a doctor based on their medical specialization. 
  
-6. PatientManager Class - PatientManager.java 
- 
+6. PatientManager Class - PatientManager.java  
 - The `PatientManager` class is responsible for managing patients and appointments. 
 - It maintains a list of patients using the `List<Patient>` data structure and a list of appointments. 
 - The `loadAppointmentsFromFile` method reads appointments from a text file (`appointments.txt`) and populates the list of appointments. 
 - The `saveAppointmentsToFile` method saves appointments to the same text file. 
 - The `bookAppointment` method allows the user to book an appointment by selecting a doctor based on specialization and then generates a receipt. 
  
-7. Appointment Class - Appointment.java 
- 
+7. Appointment Class - Appointment.java  
 - The `Appointment` class represents an appointment made by a patient with a doctor. 
 - It contains references to both the patient and the doctor. 
 - The `generateReceipt` method generates a receipt for the appointment. 
 - The `toString` method provides a string representation of the appointment. 
  
 8. File Handling 
- 
 - The program uses file handling to store and retrieve appointment data in a text file (`appointments.txt`). 
 - When an appointment is booked, the data is written to the file. 
 - When the program starts, it reads the appointments from the file into memory. 
  
-9. User Interface 
- 
+9. User Interface  
 - The program provides a simple text-based user interface that allows users to interact with the system. 
 - Users can manage patients and doctors, book appointments, and view appointment details. 
 
