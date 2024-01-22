@@ -1,13 +1,13 @@
 # MEDICAL-MANAGEMENT-SYSTEM
 In the contemporary healthcare industry, efficient management of patients, doctors, and appointments is crucial for providing quality care and ensuring the smooth operation of medical practices. This project aims to address these challenges by developing a Medical Management System. 
 
-#Objectives
+**OBJECTIVES**
 - To create a user-friendly application for managing patient records. 
 - To facilitate the management of doctor information and appointments. 
 - To allow patients to book appointments with preferred doctors. 
 - To generate appointment receipts for patients. 
 
-#System-Requirements
+**SYSTEM REQUIREMENTS**
  Functional Requirements-
 - Patient Management: 
   - Add, view, and update patient records. 
@@ -34,7 +34,7 @@ In the contemporary healthcare industry, efficient management of patients, docto
 - Hardware: Standard PC or laptop with Java runtime environment. 
 - Software: Java Development Kit (JDK), integrated development environment (IDE), text editor.
 
-#Modules-and-Stakeholders
+**MODULES AND STAKEHOLDERS**
 Modules:
 1. Patient Management Module:
    - Responsible for adding, listing, and managing patient records. 
@@ -83,7 +83,7 @@ Stakeholders:
 These modules and stakeholders collectively contribute to the development, maintenance, and usage of the Java Medical Management System. Successful collaboration and communication among these groups are essential for the system's effectiveness and user satisfaction. Additionally, adherence to relevant healthcare regulations is crucial for data security and privacy. 
 
 
-#Breakdown-of-Code
+**BREAKDOWN OF CODE**
 1. Main Class - MedicalManagementSystem.java
  
 - This is the main class of the program where user interactions are handled. 
